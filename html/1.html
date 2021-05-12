@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>等腰三角形、平行四边形、菱形</title>
+</head>
+<body style="text-align: center;">
+<script>
+//打印三角形
+function star() {
+	var m = prompt("请输入要打印的等腰三角形行数： ");
+	m = parseInt(m);
+for(var i=1;i<=m;i++){
+	for(var j=1;j<=m-i;j++){
+		document.write("&emsp;")
+	}
+	document.write("<br>")
+    for(var j=1;j<=i;j++){
+	document.write("* &emsp;")
+    }
+     document.write("<br>")
+ }
+}
+  star();
+  document.write("<hr>")
+</script>
+<script>
+	//打印平行四边形
+function star() {
+	var m = prompt("请输入要打印的平行四边形行数： ");
+	m = parseInt(m);
+for(var i=1;i<m+1;i++){
+	for(var j=1;j<m+1-i;j++){
+	   document.write("&emsp;")
+	}
+	for(var j=1;j<m+1;j++){
+	   document.write("* &emsp;")
+	}
+	document.write("<br>")
+ }
+}
+  star();
+document.write("<hr>")
+</script>
+<script>
+	//打印菱形
+function star() {
+	var m = prompt("请输入要打印的菱形行数： ");
+		m = parseInt(m);
+	 for(var i=1;i<=m-2;i++){
+		for(var j=1;j<=m-2-i;j++){
+			document.write("&emsp;")
+		}
+		document.write("<br>")
+		for(var j=1;j<=i;j++){
+			document.write("* &emsp;")
+		}
+		document.write("<br>")
+	 }
+	 for(var i=1;i<=m-2;i++){
+		for(var j=1;j<=i;j++){
+			document.write("&emsp;")
+		}
+		document.write("<br>")
+		for(var j=1;j<=m-2-i;j++){
+			document.write("* &emsp;")
+		}
+		document.write("<br>")
+	 }
+}
+	star();
+</script>
+</body>
+</html>
